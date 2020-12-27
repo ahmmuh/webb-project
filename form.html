@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Get Job | För kandidater</title>
+  </head>
+  <body>
+    <!-- navbar med logo text -->
+    <section class="container">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <h1>Get job</h1>
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="jobs.html">Lediga jobb</a></li>
+            <li><a href="form.html">För kandidater</a></li>
+          </ul>
+        </div>
+
+        <div class="toggle">
+          <div class="hamburgare"></div>
+          <div class="hamburgare"></div>
+          <div class="hamburgare"></div>
+        </div>
+      </nav>
+      <!-- the end of the navbar -->
+
+      <!-- header -->
+      <header id="header">
+        <div class="header-text">
+          <h1>Välkommen till kandidat sida !</h1>
+          <p>
+            Om du söker jobb på vår sajt kan du öka din chans att få jobb genom
+            att skapa en jobbprofil och lägga upp dina examen och intyg.
+          </p>
+        </div>
+      </header>
+      <!-- header ends -->
+      <section>
+        <div class="form-container grid-2">
+          <div class="form-text">
+            <form>
+              <div class="form-group">
+                <label for="name">Namn:</label>
+                <input type="text" name="name" id="name" />
+              </div>
+
+              <div class="form-group">
+                <label for="lname">Efternamn:</label>
+                <input type="text" name="lname" id="lname" />
+              </div>
+              <div class="form-group">
+                <label for="email">Namn:</label>
+                <input type="text" name="email" id="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="tel">Tel:</label>
+                <input type="text" name="tel" id="tel" />
+              </div>
+
+              <div class="form-group">
+                <label for="message"> Berätta om dig:</label>
+                <textarea name="message" id="message" cols="30" rows="10">
+                </textarea>
+              </div>
+
+              <h2>Vad har du för examen</h2>
+              <select name="chooseLevel" id="chooseLevel">
+                <option value="school">Välj examen</option>
+                <option value="school">Gymnasieexamen(IT tekniker)</option>
+                <option value="Masterexamen">Masterexamen</option>
+                <option value="Civilingenjorsexamen">
+                  Civilingenjörsexamen
+                </option>
+
+                <option value="it-tekniker">IT tekniker (YH)</option>
+                <option value="it-tekniker">
+                  Systemutvecklare (Självlärd)
+                </option>
+                <option value="it-tekniker">App utvecklare</option>
+              </select>
+            </form>
+          </div>
+          <div class="left-side">
+            <ul>
+              <li>
+                <a href="#">Lägga till nytt jobb</a>
+              </li>
+              <li>
+                <a href="#">Skapa jobb profil</a>
+              </li>
+              <li><a href="#">För arbetsgivare</a></li>
+            </ul>
+
+            <div class="info-container">
+              <h2>Jobb information</h2>
+              <div class="info">
+                <p><strong>45</strong> nya jobb</p>
+                <p><strong>1340</strong> lediga jobb</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer>
+        <address>
+          Spanngränd 1 <br />
+          906 28, Umeå <br />
+          Sweden
+        </address>
+        <a href="index.html">Get Job &copy; 2020</a>
+      </footer>
+    </section>
+  </body>
+</html>
