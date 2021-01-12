@@ -1,220 +1,247 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-  width: 80%;
-  margin: 1rem auto;
-}
-/* navbar */
-.navbar {
-  background-color: rgb(242, 240, 240);
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.7rem;
-  height: 12rem;
-}
-
-.navbar-container h1 {
-  font-size: 2rem;
-  text-shadow: 2px 3px 4px rgba(244, 149, 6, 0.849);
-}
-
-.navbar-container ul li {
-  line-height: 2;
-}
-.navbar-container ul li a:hover {
-  border-bottom: 0.1rem solid #232;
-}
-.navbar-container ul li a {
-  text-decoration: none;
-  color: rgb(97, 94, 94);
-  font-size: 1.2rem;
-}
-.navbar .toggle {
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-  position: relative;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-.navbar .toggle .hamburgare {
-  background-color: #222;
-  width: 100%;
-  height: 4px;
-  margin: 0.8rem 0;
-}
-.navbar ul {
-  list-style: none;
-}
-
-/* header */
-
-#header {
-  background: linear-gradient(rgb(227, 85, 85), rgba(99, 131, 99, 0.658));
-  height: 20rem;
-  margin-top: 0.2rem;
-}
-#header .header-text {
-  color: white;
-  padding: 3rem;
-  font-size: 1.5em;
-}
-/* header ends */
-
-/* home page content */
-/* jobs page */
-.content-container,
-.job-container,
-.form-container {
-  margin-top: 1rem;
-  padding: 0.2rem;
-}
-.content-container .home-text p {
-  line-height: 1.5;
-}
-.content-container .left-side,
-.job-container .left-side,
-.form-container .left-side {
-  border-left: 1px solid red;
-  padding: 0.5rem;
-}
-.content-container .left-side ul,
-.job-container .left-side ul,
-.form-container .left-side ul {
-  list-style: none;
-  margin: 2rem 0;
-}
-.content-container .left-side ul li,
-.job-container .left-side ul li,
-.form-container .left-side ul li {
-  padding: 0.7rem 0;
-  border-bottom: 0.1rem solid rgb(209, 235, 61);
-}
-.content-container .left-side ul li:hover,
-.job-container .left-side ul li:hover,
-.form-container .left-side ul li:hover {
-  border-bottom: 1px solid #222;
-}
-.content-container .left-side ul li a,
-.job-container .left-side ul li a,
-.form-container .left-side ul li a {
-  text-decoration: none;
-  color: #232;
-}
-
-.info-container {
-  padding: 0.5rem;
-}
-
-.info-container .info {
-  margin-top: 1rem;
-}
-.info-container .info p {
-  font-size: 1.3rem;
-  padding: 0.5rem 0;
-  cursor: pointer;
-}
-.info-container .info p strong {
-  background-color: rgb(35, 162, 56);
-  color: white;
-  padding: 0.3rem;
-  border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  -ms-border-radius: 0.4rem;
-  -o-border-radius: 0.4rem;
-}
-/* home page content ends */
-/* job page */
-
-.job-container .job-text {
-  padding: 0.1rem;
-}
-.job-container .job-text p {
-  font-size: 1.2rem;
-  line-height: 1.3;
-}
-.job-text .expair-date {
-  color: red;
-}
-.job-text .apply-btn {
-  background-color: rgb(172, 112, 88);
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  color: #fff;
-  margin: 1rem 0rem;
-  cursor: pointer;
-}
-.job-text .apply-btn:hover {
-  text-decoration: underline;
-}
-
-/* form page */
-.form-container form {
-  padding: 1rem;
-}
-.form-container form .form-group {
-  background-color: #fff;
-  padding: 0.2rem 0.5rem;
-  display: flex;
-  flex-direction: column;
-}
-.form-container form .form-group input {
-  padding: 0.5rem;
-  font-size: 0.9rem;
-  border-radius: 0.6rem;
-  -webkit-border-radius: 0.6rem;
-  -moz-border-radius: 0.6rem;
-  -ms-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
-}
-form h2 {
-  padding: 1rem 0;
-}
-#chooseLevel {
-  padding: 1rem;
-}
-#chooseLevel option {
-  background-color: red;
-}
-/* footer */
-footer {
-  background-color: #222;
-  color: white;
-  height: 14rem;
-  padding: 1rem;
-  font-size: 1.3rem;
-  margin-top: 1rem;
-}
-footer a {
-  color: white;
-  text-decoration: none;
-}
-/* footer ends */
-
-/* media query */
-
+/* media query för Mobile First*/
+/* kod för telefoner med storlek för 320px och uppåt */
 @media (min-width: 320px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
   .navbar {
     border-bottom: 2px solid #232;
   }
+  .container {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  /* navbar, denna kod gör att navigering blir 2 spaltar en list med länkarna och loggan och en hamburgaremenyn tack vare css flex-box*/
+  .navbar {
+    background-color: rgb(242, 240, 240);
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem;
+    height: 12rem;
+  }
+
+  .navbar-container h2 {
+    font-size: 2rem;
+    text-shadow: 2px 3px 4px rgba(244, 149, 6, 0.849);
+  }
+
+  .navbar-container ul li {
+    line-height: 2;
+  }
+  .navbar-container ul li a:hover {
+    border-bottom: 0.1rem solid #232;
+  }
+  .navbar-container ul li a {
+    text-decoration: none;
+    color: rgb(97, 94, 94);
+    font-size: 1.2rem;
+  }
+  .navbar .toggle {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .navbar .toggle .hamburgare {
+    background-color: #222;
+    width: 100%;
+    height: 4px;
+    margin: 0.8rem 0;
+  }
+  .navbar ul {
+    list-style: none;
+  }
+
+  /* header */
+
+  #header {
+    background: linear-gradient(rgb(227, 85, 85), rgba(99, 131, 99, 0.658));
+    height: 20rem;
+    margin-top: 0.2rem;
+  }
+  #header .header-text {
+    color: white;
+    padding: 3rem;
+    font-size: 1.5em;
+  }
+  /* header ends */
+
+  /* home page content */
+  /* jobs page */
+  .content-container,
+  .job-container,
+  .form-container {
+    margin-top: 1rem;
+    padding: 0.2rem;
+  }
+  .content-container .home-text p {
+    line-height: 1.5;
+  }
+  .content-container .left-side,
+  .job-container .left-side,
+  .form-container .left-side {
+    border-left: 1px solid red;
+    padding: 0.5rem;
+  }
+  .content-container .left-side ul,
+  .job-container .left-side ul,
+  .form-container .left-side ul {
+    list-style: none;
+    margin: 2rem 0;
+  }
+  .content-container .left-side ul li,
+  .job-container .left-side ul li,
+  .form-container .left-side ul li {
+    padding: 0.7rem 0;
+    border-bottom: 0.1rem solid rgb(209, 235, 61);
+  }
+  .content-container .left-side ul li:hover,
+  .job-container .left-side ul li:hover,
+  .form-container .left-side ul li:hover {
+    border-bottom: 1px solid #222;
+  }
+  .content-container .left-side ul li a,
+  .job-container .left-side ul li a,
+  .form-container .left-side ul li a {
+    text-decoration: none;
+    color: #232;
+  }
+  textarea {
+    font-size: 1.8rem;
+  }
+
+  .info-container {
+    padding: 0.5rem;
+  }
+
+  .info-container .info {
+    margin-top: 1rem;
+  }
+  .info-container .info p {
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+  }
+  .info-container .info p strong {
+    background-color: rgb(35, 162, 56);
+    color: white;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+  }
+  /* home page content ends */
+  /* job page */
+
+  .job-description p {
+    padding-right: 2rem;
+  }
+  .job-container .job-text {
+    padding: 0.1rem;
+  }
+  .job-container .job-text p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  .job-text .expair-date {
+    color: red;
+  }
+  .job-text .apply-btn {
+    background-color: rgb(172, 112, 88);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 1rem 0rem;
+    cursor: pointer;
+  }
+  .job-text .apply-btn:hover {
+    text-decoration: underline;
+  }
+
+  /* form page */
+  .form-container form {
+    padding: 1rem;
+  }
+
+  /* här blir fälten på formuläret under varandra (columns) 
+  -> flex-direction: column */
+  .form-container form .form-group {
+    background-color: #fff;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container form .form-group input {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+  }
+  form {
+    padding: 1rem 0;
+  }
+  label {
+    padding: 0.4rem 0;
+  }
+  #chooseLevel {
+    padding: 1rem;
+  }
+  #chooseLevel option {
+    background-color: red;
+  }
+  /* denna kod gör att title för select element och själv selekten går under varandra */
+  #select {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.4rem;
+  }
+  /* btn-send */
+  .btn-send {
+    background-color: green;
+    color: white;
+    margin-left: 1.3rem;
+    padding: 0.8rem;
+  }
+  /* footer */
+  footer {
+    background-color: #222;
+    color: white;
+    height: 14rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  /* footer ends */
 }
 
+/* inga border på navbar efter denna storlek */
 @media (min-width: 768px) {
   .navbar {
     border-bottom: none;
   }
+
+  /* definerat en css class .grid-2, den är återanvändbar när man vill 2 spaltar, första stor och andra är mindre */
   .grid-2 {
     display: grid;
     grid-template-columns: 70% 1fr;
   }
+  /* innehållet på footer blir två columner, adress på vänstra column och copyright på högra   */
   footer {
     display: flex;
     justify-content: space-between;
@@ -225,10 +252,12 @@ footer a {
   .navbar {
     height: auto;
   }
+  /* denna gör att menyn med loggan hamnar på vänstra och hamburgare hamnar på högra sida i menyn  */
   .navbar .navbar-container {
     display: flex;
     justify-content: space-between;
   }
+  /* denna gör att list items blir bredvid varandra med mellanrum */
   .navbar-container ul {
     margin-left: 1rem;
     display: flex;
@@ -237,6 +266,7 @@ footer a {
   .navbar-container ul li {
     padding-left: 2rem;
   }
+  /* gömma .hamburgare menyn på stora skärmar */
   .toggle {
     display: none;
   }

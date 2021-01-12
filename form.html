@@ -7,11 +7,11 @@
     <title>Get Job | För kandidater</title>
   </head>
   <body>
-    <!-- navbar med logo text -->
-    <section class="container">
+    <!-- parent container & navbar med logo text -->
+    <div class="container">
       <nav class="navbar">
         <div class="navbar-container">
-          <h1>Get job</h1>
+          <h2>Get job</h2>
           <ul>
             <li><a href="index.html">Hem</a></li>
             <li><a href="jobs.html">Lediga jobb</a></li>
@@ -38,6 +38,7 @@
         </div>
       </header>
       <!-- header ends -->
+      <!-- content area starts -->
       <section>
         <div class="form-container grid-2">
           <div class="form-text">
@@ -52,7 +53,7 @@
                 <input type="text" name="lname" id="lname" />
               </div>
               <div class="form-group">
-                <label for="email">Namn:</label>
+                <label for="email">E-post:</label>
                 <input type="text" name="email" id="email" />
               </div>
 
@@ -67,22 +68,26 @@
                 </textarea>
               </div>
 
-              <h2>Vad har du för examen</h2>
-              <select name="chooseLevel" id="chooseLevel">
-                <option value="school">Välj examen</option>
-                <option value="school">Gymnasieexamen(IT tekniker)</option>
-                <option value="Masterexamen">Masterexamen</option>
-                <option value="Civilingenjorsexamen">
-                  Civilingenjörsexamen
-                </option>
+              <div id="select">
+                <label for="chooseLevel">Vad har du för examen</label>
+                <select name="chooseLevel" id="chooseLevel">
+                  <option value="school">Välj examen</option>
+                  <option value="school">Gymnasieexamen(IT tekniker)</option>
+                  <option value="Masterexamen">Masterexamen</option>
+                  <option value="Civilingenjorsexamen">
+                    Civilingenjörsexamen
+                  </option>
 
-                <option value="it-tekniker">IT tekniker (YH)</option>
-                <option value="it-tekniker">
-                  Systemutvecklare (Självlärd)
-                </option>
-                <option value="it-tekniker">App utvecklare</option>
-              </select>
+                  <option value="it-tekniker">IT tekniker (YH)</option>
+                  <option value="it-tekniker">
+                    Systemutvecklare (Självlärd)
+                  </option>
+                  <option value="it-tekniker">App utvecklare</option>
+                  <option value="school">Övriga</option>
+                </select>
+              </div>
             </form>
+            <button class="btn-send" type="submit">Skicka</button>
           </div>
           <div class="left-side">
             <ul>
@@ -105,6 +110,8 @@
           </div>
         </div>
       </section>
+
+      <!-- content area ends -->
       <!-- footer -->
       <footer>
         <address>
@@ -114,6 +121,6 @@
         </address>
         <a href="index.html">Get Job &copy; 2020</a>
       </footer>
-    </section>
+    </div>
   </body>
 </html>

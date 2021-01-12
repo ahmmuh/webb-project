@@ -8,17 +8,17 @@
   </head>
   <body>
     <!-- navbar med logo text -->
-    <section class="container">
+    <div class="container">
       <nav class="navbar">
         <div class="navbar-container">
-          <h1>Get job</h1>
+          <h2>Get job</h2>
           <ul>
             <li><a href="index.html">Hem</a></li>
             <li><a href="jobs.html">Lediga jobb</a></li>
             <li><a href="form.html">För kandidater</a></li>
           </ul>
         </div>
-
+        <!-- Här skapar jag hamburgare menu, en container och i den tre divar för att rita upp de 3 sträck (hamburgare menu) -->
         <div class="toggle">
           <div class="hamburgare"></div>
           <div class="hamburgare"></div>
@@ -37,6 +37,9 @@
         </div>
       </header>
       <!-- header ends -->
+      <!-- content for jobs page starts  -->
+      <!-- Skapat 2 css klasser .grid-2 och .grid-3
+      för att kunna återanvända dem t.ex. om jag skapar en sida med två spaltar då tar jag in grid-2, om jag vill ha 3 spaltar då tar jag in grid-3 -->
       <section>
         <div class="job-container grid-2">
           <div class="job-text grid-2 grid-3">
@@ -53,59 +56,51 @@
               </div>
             </div>
             <div class="job-description">
-              <div class="job-description">
-                <h2>Angular developer</h2>
-                <p>
-                  Get job söker 2 st Angular utvecklare som kan Angular men även
-                  andra bibliotek i js.
-                </p>
-                <div class="apply-job">
-                  <p>Publiceringsdaum: 2020-12-13</p>
-                  <p class="expair-date">Sök senast: 2021-02-05</p>
-                  <button class="apply-btn">Sök tjänsten</button>
-                </div>
+              <h2>Angular developer</h2>
+              <p>
+                Get job söker 2 st Angular utvecklare som kan Angular men även
+                andra bibliotek i js.
+              </p>
+              <div class="apply-job">
+                <p>Publiceringsdaum: 2020-12-13</p>
+                <p class="expair-date">Sök senast: 2021-02-05</p>
+                <button class="apply-btn">Sök tjänsten</button>
               </div>
             </div>
             <div class="job-description">
-              <div class="job-description">
-                <h2>Nodejs developer</h2>
-                <p>
-                  Team Dev söker en nodejs utvecklare som kan Nodejs men även
-                  Express och Mongodb.
-                </p>
-                <div class="apply-job">
-                  <p>Publiceringsdaum: 2020-11-02</p>
-                  <p class="expair-date">Sök senast: 2021-02-23</p>
-                  <button class="apply-btn">Sök tjänsten</button>
-                </div>
+              <h2>Nodejs developer</h2>
+              <p>
+                Team Dev söker en nodejs utvecklare som kan Nodejs men även
+                Express och Mongodb.
+              </p>
+              <div class="apply-job">
+                <p>Publiceringsdaum: 2020-11-02</p>
+                <p class="expair-date">Sök senast: 2021-02-23</p>
+                <button class="apply-btn">Sök tjänsten</button>
               </div>
             </div>
             <div class="job-description">
-              <div class="job-description">
-                <h2>Webb designer</h2>
-                <p>
-                  Codeanytime söker duktiga webbdesigner som kan html och css
-                  men även Bootstrap och foundation.
-                </p>
-                <div class="apply-job">
-                  <p>Publiceringsdaum: 2020-12-02</p>
-                  <p class="expair-date">Sök senast: 2021-01-27</p>
-                  <button class="apply-btn">Sök tjänsten</button>
-                </div>
+              <h2>Webb designer</h2>
+              <p>
+                Codeanytime söker duktiga webbdesigner som kan html och css men
+                även Bootstrap och foundation.
+              </p>
+              <div class="apply-job">
+                <p>Publiceringsdaum: 2020-12-02</p>
+                <p class="expair-date">Sök senast: 2021-01-27</p>
+                <button class="apply-btn">Sök tjänsten</button>
               </div>
             </div>
             <div class="job-description">
-              <div class="job-description">
-                <h2>Wordpress developer</h2>
-                <p>
-                  Snöhjältarna söker dig som har erfarenhet av Wordpress, kan
-                  bygga plugins och tema.
-                </p>
-                <div class="apply-job">
-                  <p>Publiceringsdaum: 2021-01-02</p>
-                  <p class="expair-date">Sök senast: 2021-02-05</p>
-                  <button class="apply-btn">Sök tjänsten</button>
-                </div>
+              <h2>Wordpress developer</h2>
+              <p>
+                Snöhjältarna söker dig som har erfarenhet av Wordpress, kan
+                bygga plugins och tema.
+              </p>
+              <div class="apply-job">
+                <p>Publiceringsdaum: 2021-01-02</p>
+                <p class="expair-date">Sök senast: 2021-02-05</p>
+                <button class="apply-btn">Sök tjänsten</button>
               </div>
             </div>
           </div>
@@ -139,6 +134,6 @@
         </address>
         <a href="index.html">Get Job &copy; 2020</a>
       </footer>
-    </section>
+    </div>
   </body>
 </html>
